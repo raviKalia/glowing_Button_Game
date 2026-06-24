@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Useless Glowing Button Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎮 Useless Glowing Button Game</h1>
+
+<div id="info">
+  <div class="info-item">⏳ Time: <span id="time">60</span>s</div>
+  <div class="info-item">⭐ Score: <span id="score">0</span></div>
+</div>
+
+<div id="message">Click the glowing button!</div>
+
+<button id="startBtn" class="control-btn">Start Game</button>
+
+<div class="grid" id="grid"></div>
+
+<div id="modal" class="modal hide">
+  <div class="modal-box">
+    <h2>🎉 Time's Up!</h2>
+    <p>⭐ Score: <span id="finalScore">0</span></p>
+    <p id="finalMessage">Good job!</p>
+    <button id="restartBtn" class="control-btn">Restart</button>
+  </div>
+</div>
+
+<audio id="clickSound" src="freesound_community-water-drip-45622.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
